@@ -28,7 +28,9 @@ body {
   background-color: var(--clr-cream);
 }
 
-svg {
+.broom-icon,
+.bottle-icon,
+.fb-icon {
   width: 50px;
   fill: var(--clr-cream);
 }
@@ -212,5 +214,34 @@ h4 {
 /* FOOTER */
 
 footer {
+  padding: 1rem;
   border-top: 2px solid var(--clr-red-brown);
+  color: var(--clr-dark-brown);
+}
+
+.icon-attr-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.footer-icon {
+  width: 25px;
+  margin-right: .5rem;
+  fill: var(--clr-dark-brown);
+}
+
+.attribution {
+  font-size: .75rem;
+}
+
+.attr-link {
+  font-size: .75rem;
+  color: var(--clr-green);
+  transition: color var(--transition), text-shadow var(--transition);
+}
+
+.attr-link:hover {
+  color: var(--clr-lt-green);
+  text-shadow: 2px 2px 3px var(--clr-lt-tan);
 }
