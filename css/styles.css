@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+
+  --clr-green: #456c3d;
+  --clr-lt-green: #848a56;
+  --clr-brown-green: #b3995b;
+  --clr-cream: #f0ead2;
+  --clr-lt-tan: #e1a760;
+  --clr-tan: #d29057;
+  --clr-lt-red-brown: #bd6c40;
+  --clr-red-brown: #a84729;
+  --clr-dark-brown: #62341e;
+
+  --transition: .4s ease;
+}
+
+/* BASE STYLES */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-cream);
+}
+
+svg {
+  width: 50px;
+  fill: var(--clr-cream);
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--clr-green);
+}
+
+.diagonal-box1 {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, var(--clr-red-brown), var(--clr-lt-tan));
+  transform: skewY(-11deg);
+}
+
+.db-content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+  height: 100%;
+  margin: 0 auto;
+  transform: skewY(11deg);
+  text-align: center;
+}
+
+h1 {
+  margin-block: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--clr-cream);
+}
+
+.bottle-icon {
+  transform: scaleX(-1);
+}
+
+/* MAIN */
+
+main {
+  padding-inline: 1rem;
+}
+
+nav {
+  margin-block: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  padding: .5rem 1rem .5rem 1rem;
+  border-radius: 15px;
+  background-color: var(--clr-red-brown);
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: var(--clr-cream);
+  transition: background-color var(--transition);
+}
+
+nav a:hover {
+  cursor: pointer;
+  background-color: var(--clr-lt-red-brown);
+}
+
+h2 {
+  margin-block: 3rem;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--clr-dark-brown)
+}
+
+/* SERVICES */
+
+.diagonal-box2 {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(45deg, var(--clr-red-brown), var(--clr-lt-tan));
+  transform: skewY(11deg);
+}
+
+.db-content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50vw;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  transform: skewY(-11deg);
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  ;
+  font-size: 2.5rem;
+  color: var(--clr-cream);
+}
